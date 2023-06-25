@@ -65,7 +65,7 @@ class Penduduk extends CI_Controller
         } else {
             $config['upload_path']      = './Upload/Dokumen-Profile-Penduduk/';
             $config['allowed_types']    = 'png|jpeg|jpg';
-            $config['maax_size']        = '5048';
+            $config['max_size']        = '5048';
             $config['file_name'] = $_FILES['foto']['name'];
 
             $this->load->library('upload');
