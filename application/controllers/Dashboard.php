@@ -28,7 +28,7 @@ class Dashboard extends CI_Controller
 
 		if ($user['akses'] == 'user') {
 			redirect('Dashboard/dashboard_user');
-		} 
+		}
 		$data['title'] 		= 'Sistem Informasi Keluhan Masyarakat';
 		$data['aktif'] 		= 'dashboard_admin';
 		$data['profile'] 	= $this->M_account->get_all()->row_array();
